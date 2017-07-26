@@ -42,6 +42,10 @@ Osman Villi
 ## Credits
 
 www.dyd.org.tr
+
 http://www.dyd.org.tr/forum/
+
 https://www.facebook.com/groups/dydofficial/
+
 https://www.instagram.com/droneyariscilarisporkulubu/
+
