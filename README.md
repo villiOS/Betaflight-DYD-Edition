@@ -1,8 +1,10 @@
 # Betaflight Configurator for Drone Yarışçıları Derneği
 
+![DYD](http://www.dyd.org.tr/wp-content/uploads/2017/05/logo-amblem.png)![DYD](http://www.dyd.org.tr/wp-content/uploads/2017/05/logo-amblem.png)![DYD](http://www.dyd.org.tr/wp-content/uploads/2017/05/logo-amblem.png)
+
 ![Betaflight](http://static.rcgroups.net/forums/attachments/6/1/0/3/7/6/a9088900-228-bf_logo.jpg)
 
-![Betaflight](https://scontent-frt3-1.xx.fbcdn.net/v/t31.0-8/19800952_570128203375463_5628880444271754617_o.jpg?oh=d6d1ffe25940fa6a6a0809373752ae5a&oe=5A031B2A)
+![DYD](https://scontent-frt3-1.xx.fbcdn.net/v/t31.0-8/19800952_570128203375463_5628880444271754617_o.jpg?oh=d6d1ffe25940fa6a6a0809373752ae5a&oe=5A031B2A)
 
 Betaflight Configurator for DYD Chrome üzerine kurulur.
 
