@@ -2,6 +2,8 @@
 
 ![Betaflight](http://static.rcgroups.net/forums/attachments/6/1/0/3/7/6/a9088900-228-bf_logo.jpg)
 
+![Betaflight](https://scontent-frt3-1.xx.fbcdn.net/v/t31.0-8/19800952_570128203375463_5628880444271754617_o.jpg?oh=d6d1ffe25940fa6a6a0809373752ae5a&oe=5A031B2A)
+
 Betaflight Configurator for DYD Chrome üzerine kurulur.
 
 
