@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A13FB437-7FEE-492F-B991-EB3510EC5816}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChromeApp_BetaflightDYD</RootNamespace>
+    <AssemblyName>ChromeApp_BetaflightDYD</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BF\css\dropdown-lists\LICENSE" />
+    <Content Include="BF\css\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="BF\css\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="BF\css\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="BF\css\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="BF\css\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-bold-webfont.eot" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-bold-webfont.ttf" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-bold-webfont.woff" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-bold-webfont.woff2" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-bolditalic-webfont.eot" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-bolditalic-webfont.ttf" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-bolditalic-webfont.woff" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-bolditalic-webfont.woff2" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-italic-webfont.eot" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-italic-webfont.ttf" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-italic-webfont.woff" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-italic-webfont.woff2" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-light-webfont.eot" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-light-webfont.ttf" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-light-webfont.woff" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-light-webfont.woff2" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-regular-webfont.eot" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-regular-webfont.ttf" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-regular-webfont.woff" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-regular-webfont.woff2" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-semibold-webfont.eot" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-semibold-webfont.ttf" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-semibold-webfont.woff" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-semibold-webfont.woff2" />
+    <Content Include="BF\images\bf_icon_128.psd" />
+    <Content Include="BF\js\libraries\jquery-2.1.4.min.map" />
+    <Content Include="BF\LICENSE" />
+    <Content Include="BF\manifest.json" />
+    <Content Include="BF\README.md" />
+    <Content Include="BF\resources\models\fallback.json" />
+    <Content Include="BF\resources\models\hex_plus.json" />
+    <Content Include="BF\resources\models\hex_x.json" />
+    <Content Include="BF\resources\models\quad_atail.json" />
+    <Content Include="BF\resources\models\quad_vtail.json" />
+    <Content Include="BF\resources\models\quad_x.json" />
+    <Content Include="BF\resources\models\tricopter.json" />
+    <Content Include="BF\resources\models\y4.json" />
+    <Content Include="BF\resources\models\y6.json" />
+    <Content Include="BF\resources\osd\betaflight.mcm" />
+    <Content Include="BF\resources\osd\bold.mcm" />
+    <Content Include="BF\resources\osd\default.mcm" />
+    <Content Include="BF\resources\osd\digital.mcm" />
+    <Content Include="BF\resources\osd\extra_large.mcm" />
+    <Content Include="BF\resources\osd\large.mcm" />
+    <Content Include="BF\support\svg_model_motors.rb" />
+    <Content Include="BF\_locales\en\messages.json" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BF\.gitattributes" />
+    <Content Include="BF\.gitignore" />
+    <Content Include="BF\changelog.html" />
+    <Content Include="BF\css\dropdown-lists\css\style_lists.css" />
+    <Content Include="BF\css\font-awesome\css\font-awesome.css" />
+    <Content Include="BF\css\font-awesome\css\font-awesome.min.css" />
+    <Content Include="BF\css\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="BF\css\opensans_webfontkit\fonts.css" />
+    <Content Include="BF\css\opensans_webfontkit\generator_config.txt" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-bold-demo.html" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-bold-webfont.svg" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-bolditalic-demo.html" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-bolditalic-webfont.svg" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-italic-demo.html" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-italic-webfont.svg" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-light-demo.html" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-light-webfont.svg" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-regular-demo.html" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-regular-webfont.svg" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-semibold-demo.html" />
+    <Content Include="BF\css\opensans_webfontkit\opensans-semibold-webfont.svg" />
+    <Content Include="BF\eventPage.js" />
+    <Content Include="BF\images\arrow.svg" />
+    <Content Include="BF\images\arrows.png" />
+    <Content Include="BF\images\bf_icon_128.png" />
+    <Content Include="BF\images\bf_icon_128_1.png" />
+    <Content Include="BF\images\btn-donate.png" />
+    <Content Include="BF\images\cf_logo_white.svg" />
+    <Content Include="BF\images\CF_settings_black.svg" />
+    <Content Include="BF\images\CF_settings_white.svg" />
+    <Content Include="BF\images\dyd.png" />
+    <Content Include="BF\images\flightindicators\altitude_pressure.svg" />
+    <Content Include="BF\images\flightindicators\altitude_ticks.svg" />
+    <Content Include="BF\images\flightindicators\fi_box.svg" />
+    <Content Include="BF\images\flightindicators\fi_circle.svg" />
+    <Content Include="BF\images\flightindicators\fi_needle.svg" />
+    <Content Include="BF\images\flightindicators\fi_needle_small.svg" />
+    <Content Include="BF\images\flightindicators\fi_tc_airplane.svg" />
+    <Content Include="BF\images\flightindicators\heading_mechanics.svg" />
+    <Content Include="BF\images\flightindicators\heading_yaw.svg" />
+    <Content Include="BF\images\flightindicators\horizon_back.svg" />
+    <Content Include="BF\images\flightindicators\horizon_ball.svg" />
+    <Content Include="BF\images\flightindicators\horizon_circle.svg" />
+    <Content Include="BF\images\flightindicators\horizon_mechanics.svg" />
+    <Content Include="BF\images\flightindicators\speed_mechanics.svg" />
+    <Content Include="BF\images\flightindicators\turn_coordinator.svg" />
+    <Content Include="BF\images\flightindicators\vertical_mechanics.svg" />
+    <Content Include="BF\images\icons\cf_failsafe_procedure1.svg" />
+    <Content Include="BF\images\icons\cf_failsafe_procedure2.svg" />
+    <Content Include="BF\images\icons\cf_failsafe_procedure3.svg" />
+    <Content Include="BF\images\icons\cf_failsafe_procedure4.svg" />
+    <Content Include="BF\images\icons\cf_icon_adjust_grey.svg" />
+    <Content Include="BF\images\icons\cf_icon_adjust_white.svg" />
+    <Content Include="BF\images\icons\cf_icon_advanced_grey.svg" />
+    <Content Include="BF\images\icons\cf_icon_advanced_white.svg" />
+    <Content Include="BF\images\icons\cf_icon_armed_active.svg" />
+    <Content Include="BF\images\icons\cf_icon_armed_grey.svg" />
+    <Content Include="BF\images\icons\cf_icon_backup_grey.svg" />
+    <Content Include="BF\images\icons\cf_icon_backup_white.svg" />
+    <Content Include="BF\images\icons\cf_icon_bat_grey.svg" />
+    <Content Include="BF\images\icons\cf_icon_cli_grey.svg" />
+    <Content Include="BF\images\icons\cf_icon_cli_white.svg" />
+    <Content Include="BF\images\icons\cf_icon_config_grey.svg" />
+    <Content Include="BF\images\icons\cf_icon_config_white.svg" />
+    <Content Include="BF\images\icons\cf_icon_data_grey.svg" />
+    <Content Include="BF\images\icons\cf_icon_data_white.svg" />
+    <Content Include="BF\images\icons\cf_icon_failsafe_active.svg" />
+    <Content Include="BF\images\icons\cf_icon_failsafe_grey.svg" />
+    <Content Include="BF\images\icons\cf_icon_failsafe_white.svg" />
+    <Content Include="BF\images\icons\cf_icon_filter.svg" />
+    <Content Include="BF\images\icons\cf_icon_flasher_grey.svg" />
+    <Content Include="BF\images\icons\cf_icon_flasher_white.svg" />
+    <Content Include="BF\images\icons\cf_icon_gps_grey.svg" />
+    <Content Include="BF\images\icons\cf_icon_gps_white.svg" />
+    <Content Include="BF\images\icons\cf_icon_help_grey.svg" />
+    <Content Include="BF\images\icons\cf_icon_help_white.svg" />
+    <Content Include="BF\images\icons\cf_icon_info_green.svg" />
+    <Content Include="BF\images\icons\cf_icon_info_grey.svg" />
+    <Content Include="BF\images\icons\cf_icon_led_grey.svg" />
+    <Content Include="BF\images\icons\cf_icon_led_white.svg" />
+    <Content Include="BF\images\icons\cf_icon_link_active.svg" />
+    <Content Include="BF\images\icons\cf_icon_link_grey.svg" />
+    <Content Include="BF\images\icons\cf_icon_log_grey.svg" />
+    <Content Include="BF\images\icons\cf_icon_log_white.svg" />
+    <Content Include="BF\images\icons\cf_icon_mission_grey.svg" />
+    <Content Include="BF\images\icons\cf_icon_mission_white.svg" />
+    <Content Include="BF\images\icons\cf_icon_modes_grey.svg" />
+    <Content Include="BF\images\icons\cf_icon_modes_white.svg" />
+    <Content Include="BF\images\icons\cf_icon_motor_grey.svg" />
+    <Content Include="BF\images\icons\cf_icon_motor_white.svg" />
+    <Content Include="BF\images\icons\cf_icon_pid_grey.svg" />
+    <Content Include="BF\images\icons\cf_icon_pid_white.svg" />
+    <Content Include="BF\images\icons\cf_icon_pitch.svg" />
+    <Content Include="BF\images\icons\cf_icon_ports_grey.svg" />
+    <Content Include="BF\images\icons\cf_icon_ports_white.svg" />
+    <Content Include="BF\images\icons\cf_icon_position.png" />
+    <Content Include="BF\images\icons\cf_icon_power_grey.svg" />
+    <Content Include="BF\images\icons\cf_icon_power_white.svg" />
+    <Content Include="BF\images\icons\cf_icon_quad.svg" />
+    <Content Include="BF\images\icons\cf_icon_roll.svg" />
+    <Content Include="BF\images\icons\cf_icon_rx_grey.svg" />
+    <Content Include="BF\images\icons\cf_icon_rx_white.svg" />
+    <Content Include="BF\images\icons\cf_icon_sdcard.svg" />
+    <Content Include="BF\images\icons\cf_icon_sensors_grey.svg" />
+    <Content Include="BF\images\icons\cf_icon_sensors_white.svg" />
+    <Content Include="BF\images\icons\cf_icon_servo_grey.svg" />
+    <Content Include="BF\images\icons\cf_icon_servo_white.svg" />
+    <Content Include="BF\images\icons\cf_icon_settings_white.svg" />
+    <Content Include="BF\images\icons\cf_icon_setup_grey.svg" />
+    <Content Include="BF\images\icons\cf_icon_setup_white.svg" />
+    <Content Include="BF\images\icons\cf_icon_transponder_grey.svg" />
+    <Content Include="BF\images\icons\cf_icon_transponder_white.svg" />
+    <Content Include="BF\images\icons\cf_icon_usb1_white.svg" />
+    <Content Include="BF\images\icons\cf_icon_usb2_white.svg" />
+    <Content Include="BF\images\icons\cf_icon_vtx_grey.svg" />
+    <Content Include="BF\images\icons\cf_icon_vtx_white.svg" />
+    <Content Include="BF\images\icons\cf_icon_welcome_grey.svg" />
+    <Content Include="BF\images\icons\cf_icon_welcome_white.svg" />
+    <Content Include="BF\images\icons\cf_icon_wizard_grey.svg" />
+    <Content Include="BF\images\icons\cf_icon_wizard_white.svg" />
+    <Content Include="BF\images\icons\cf_icon_yaw.svg" />
+    <Content Include="BF\images\icons\close1.svg" />
+    <Content Include="BF\images\icons\cross2.svg" />
+    <Content Include="BF\images\icons\icon_bracket.svg" />
+    <Content Include="BF\images\icons\icon_osd.svg" />
+    <Content Include="BF\images\icons\icon_osd_white.svg" />
+    <Content Include="BF\images\icons\scroll.svg" />
+    <Content Include="BF\images\icons\sensor_acc_off.png" />
+    <Content Include="BF\images\icons\sensor_acc_on.png" />
+    <Content Include="BF\images\icons\sensor_baro_off.png" />
+    <Content Include="BF\images\icons\sensor_baro_on.png" />
+    <Content Include="BF\images\icons\sensor_gyro_off.png" />
+    <Content Include="BF\images\icons\sensor_gyro_on.png" />
+    <Content Include="BF\images\icons\sensor_mag_off.png" />
+    <Content Include="BF\images\icons\sensor_mag_on.png" />
+    <Content Include="BF\images\icons\sensor_sat_off.png" />
+    <Content Include="BF\images\icons\sensor_sat_on.png" />
+    <Content Include="BF\images\icons\sensor_sonar_off.png" />
+    <Content Include="BF\images\icons\sensor_sonar_on.png" />
+    <Content Include="BF\images\light-wide-1.svg" />
+    <Content Include="BF\images\light-wide-2.svg" />
+    <Content Include="BF\images\loading-bars.svg" />
+    <Content Include="BF\images\loading-spin.svg" />
+    <Content Include="BF\images\osd-bg-1.jpg" />
+    <Content Include="BF\images\osd-bg-2.png" />
+    <Content Include="BF\images\paper.jpg" />
+    <Content Include="BF\images\pattern.png" />
+    <Content Include="BF\js\backup_restore.js" />
+    <Content Include="BF\js\boards.js" />
+    <Content Include="BF\js\data_storage.js" />
+    <Content Include="BF\js\fc.js" />
+    <Content Include="BF\js\Features.js" />
+    <Content Include="BF\js\gui.js" />
+    <Content Include="BF\js\injected_methods.js" />
+    <Content Include="BF\js\libraries\bluebird.min.js" />
+    <Content Include="BF\js\libraries\d3.min.js" />
+    <Content Include="BF\js\libraries\flightindicators.css" />
+    <Content Include="BF\js\libraries\inflection.min.js" />
+    <Content Include="BF\js\libraries\jbox\jBox.css" />
+    <Content Include="BF\js\libraries\jbox\jBox.min.js" />
+    <Content Include="BF\js\libraries\jbox\themes\ModalBorder.css" />
+    <Content Include="BF\js\libraries\jbox\themes\NoticeBorder.css" />
+    <Content Include="BF\js\libraries\jbox\themes\TooltipBorder.css" />
+    <Content Include="BF\js\libraries\jbox\themes\TooltipDark.css" />
+    <Content Include="BF\js\libraries\jquery-2.1.4.min.js" />
+    <Content Include="BF\js\libraries\jquery-ui-1.11.2.min.js" />
+    <Content Include="BF\js\libraries\jquery-ui-1.11.4.min.js" />
+    <Content Include="BF\js\libraries\jquery.ba-throttle-debounce.min.js" />
+    <Content Include="BF\js\libraries\jquery.flightindicators.js" />
+    <Content Include="BF\js\libraries\jquery.liblink.js" />
+    <Content Include="BF\js\libraries\jquery.nouislider.all.min.js" />
+    <Content Include="BF\js\libraries\jquery.nouislider.min.css" />
+    <Content Include="BF\js\libraries\jquery.nouislider.pips.min.css" />
+    <Content Include="BF\js\libraries\q.js" />
+    <Content Include="BF\js\libraries\semver.js" />
+    <Content Include="BF\js\libraries\switchery\switchery.css" />
+    <Content Include="BF\js\libraries\switchery\switchery.js" />
+    <Content Include="BF\js\libraries\three\CanvasRenderer.js" />
+    <Content Include="BF\js\libraries\three\Projector.js" />
+    <Content Include="BF\js\libraries\three\three.min.js" />
+    <Content Include="BF\js\localization.js" />
+    <Content Include="BF\js\model.js" />
+    <Content Include="BF\js\msp.js" />
+    <Content Include="BF\js\msp\MSPCodes.js" />
+    <Content Include="BF\js\msp\MSPHelper.js" />
+    <Content Include="BF\js\port_handler.js" />
+    <Content Include="BF\js\port_usage.js" />
+    <Content Include="BF\js\protocols\stm32.js" />
+    <Content Include="BF\js\protocols\stm32usbdfu.js" />
+    <Content Include="BF\js\RateCurve.js" />
+    <Content Include="BF\js\serial.js" />
+    <Content Include="BF\js\serial_backend.js" />
+    <Content Include="BF\js\workers\hex_parser.js" />
+    <Content Include="BF\main.css" />
+    <Content Include="BF\main.html" />
+    <Content Include="BF\main.js" />
+    <Content Include="BF\resources\models\fallback.png" />
+    <Content Include="BF\resources\motor_order\airplane.svg" />
+    <Content Include="BF\resources\motor_order\atail_quad.svg" />
+    <Content Include="BF\resources\motor_order\bicopter.svg" />
+    <Content Include="BF\resources\motor_order\custom.svg" />
+    <Content Include="BF\resources\motor_order\flying_wing.svg" />
+    <Content Include="BF\resources\motor_order\hex_p.svg" />
+    <Content Include="BF\resources\motor_order\hex_x.svg" />
+    <Content Include="BF\resources\motor_order\octo_flat_p.svg" />
+    <Content Include="BF\resources\motor_order\octo_flat_x.svg" />
+    <Content Include="BF\resources\motor_order\octo_x8.svg" />
+    <Content Include="BF\resources\motor_order\quad_p.svg" />
+    <Content Include="BF\resources\motor_order\quad_x.svg" />
+    <Content Include="BF\resources\motor_order\quad_x_1234.svg" />
+    <Content Include="BF\resources\motor_order\tri.svg" />
+    <Content Include="BF\resources\motor_order\vtail_quad.svg" />
+    <Content Include="BF\resources\motor_order\y4.svg" />
+    <Content Include="BF\resources\motor_order\y6.svg" />
+    <Content Include="BF\tabs\adjustments.css" />
+    <Content Include="BF\tabs\adjustments.html" />
+    <Content Include="BF\tabs\adjustments.js" />
+    <Content Include="BF\tabs\auxiliary.css" />
+    <Content Include="BF\tabs\auxiliary.html" />
+    <Content Include="BF\tabs\auxiliary.js" />
+    <Content Include="BF\tabs\blank.html" />
+    <Content Include="BF\tabs\cli.css" />
+    <Content Include="BF\tabs\cli.html" />
+    <Content Include="BF\tabs\cli.js" />
+    <Content Include="BF\tabs\configuration.css" />
+    <Content Include="BF\tabs\configuration.html" />
+    <Content Include="BF\tabs\configuration.js" />
+    <Content Include="BF\tabs\failsafe.css" />
+    <Content Include="BF\tabs\failsafe.html" />
+    <Content Include="BF\tabs\failsafe.js" />
+    <Content Include="BF\tabs\firmware_flasher.css" />
+    <Content Include="BF\tabs\firmware_flasher.html" />
+    <Content Include="BF\tabs\firmware_flasher.js" />
+    <Content Include="BF\tabs\gps.css" />
+    <Content Include="BF\tabs\gps.html" />
+    <Content Include="BF\tabs\gps.js" />
+    <Content Include="BF\tabs\help.css" />
+    <Content Include="BF\tabs\help.html" />
+    <Content Include="BF\tabs\help.js" />
+    <Content Include="BF\tabs\landing.css" />
+    <Content Include="BF\tabs\landing.html" />
+    <Content Include="BF\tabs\landing.js" />
+    <Content Include="BF\tabs\led_strip.css" />
+    <Content Include="BF\tabs\led_strip.html" />
+    <Content Include="BF\tabs\led_strip.js" />
+    <Content Include="BF\tabs\logging.css" />
+    <Content Include="BF\tabs\logging.html" />
+    <Content Include="BF\tabs\logging.js" />
+    <Content Include="BF\tabs\map.html" />
+    <Content Include="BF\tabs\map.js" />
+    <Content Include="BF\tabs\motors.css" />
+    <Content Include="BF\tabs\motors.html" />
+    <Content Include="BF\tabs\motors.js" />
+    <Content Include="BF\tabs\onboard_logging.css" />
+    <Content Include="BF\tabs\onboard_logging.html" />
+    <Content Include="BF\tabs\onboard_logging.js" />
+    <Content Include="BF\tabs\options.html" />
+    <Content Include="BF\tabs\osd.css" />
+    <Content Include="BF\tabs\osd.html" />
+    <Content Include="BF\tabs\osd.js" />
+    <Content Include="BF\tabs\pid_tuning.css" />
+    <Content Include="BF\tabs\pid_tuning.html" />
+    <Content Include="BF\tabs\pid_tuning.js" />
+    <Content Include="BF\tabs\ports.css" />
+    <Content Include="BF\tabs\ports.html" />
+    <Content Include="BF\tabs\ports.js" />
+    <Content Include="BF\tabs\power.css" />
+    <Content Include="BF\tabs\power.html" />
+    <Content Include="BF\tabs\power.js" />
+    <Content Include="BF\tabs\receiver.css" />
+    <Content Include="BF\tabs\receiver.html" />
+    <Content Include="BF\tabs\receiver.js" />
+    <Content Include="BF\tabs\receiver_msp.css" />
+    <Content Include="BF\tabs\receiver_msp.html" />
+    <Content Include="BF\tabs\receiver_msp.js" />
+    <Content Include="BF\tabs\review.html" />
+    <Content Include="BF\tabs\sensors.css" />
+    <Content Include="BF\tabs\sensors.html" />
+    <Content Include="BF\tabs\sensors.js" />
+    <Content Include="BF\tabs\servos.css" />
+    <Content Include="BF\tabs\servos.html" />
+    <Content Include="BF\tabs\servos.js" />
+    <Content Include="BF\tabs\setup.css" />
+    <Content Include="BF\tabs\setup.html" />
+    <Content Include="BF\tabs\setup.js" />
+    <Content Include="BF\tabs\setup_osd.css" />
+    <Content Include="BF\tabs\setup_osd.html" />
+    <Content Include="BF\tabs\setup_osd.js" />
+    <Content Include="BF\tabs\transponder.css" />
+    <Content Include="BF\tabs\transponder.html" />
+    <Content Include="BF\tabs\transponder.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55739</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55739/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
