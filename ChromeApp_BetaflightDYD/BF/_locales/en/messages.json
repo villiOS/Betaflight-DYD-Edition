@@ -6,40 +6,40 @@
     "message": "Warning"
   },
   "options_title": {
-    "message": "Application Options"
+    "message": "Uygulama Ayarları"
   },
   "options_receive_app_notifications": {
     "message": "Receive desktop <strong>notification</strong> when application updates"
   },
   "connect": {
-    "message": "Connect"
+    "message": "Bağlan"
   },
   "connecting": {
-    "message": "Connecting"
+    "message": "Bağlanıyor"
   },
   "disconnect": {
-    "message": "Disconnect"
+    "message": "Bağlantıyı Kes"
   },
   "autoConnect": {
-    "message": "Auto-Connect"
+    "message": "Otomatik Bağlan"
   },
   "autoConnectEnabled": {
-    "message": "Auto-Connect: Enabled - Configurator automatically tries to connect when new port is detected"
+    "message": "Otomatik Bağlantı: Aktif - FC bağlantısı algılandığında otomatik bağlanır."
   },
   "autoConnectDisabled": {
-    "message": "Auto-Connect: Disabled - User needs to select the correct serial port and click \"Connect\" button on its own"
+    "message": "Otomatik Bağlantı: İnaktif - Doğru serial portu seçip tıklamanız gerekir. \"Bağlan\" "
   },
   "expertMode": {
-    "message": "Enable Expert Mode"
+    "message": "Uzman modu aktif et."
   },
   "permanentExpertMode": {
     "message": "Permanently enable Expert Mode"
   },
   "deviceRebooting": {
-    "message": "Device - <span style=\"color: red\">Rebooting</span>"
+    "message": "FC - <span style=\"color: red\">Yeniden başlatılıyor...</span>"
   },
   "deviceReady": {
-    "message": "Device - <span style=\"color: #ffbb00\">Ready</span>"
+    "message": "FC - <span style=\"color: #ffbb00\">Hazır</span>"
   },
 
   "backupFileIncompatible": {
@@ -80,19 +80,19 @@
     "message": "Configuration"
   },
   "tabPorts": {
-    "message": "Ports"
+    "message": "Portlar"
   },
   "tabPidTuning": {
-    "message": "PID Tuning"
+    "message": "PID Ayarları"
   },
   "tabReceiver": {
-    "message": "Receiver"
+    "message": "Kumanda Alıcısı"
   },
   "tabModeSelection": {
-    "message": "Mode Selection"
+    "message": "Mode Seçimi"
   },
   "tabServos": {
-    "message": "Servos"
+    "message": "Servolar"
   },
   "tabFailsafe": {
     "message": "Failsafe"
@@ -104,19 +104,19 @@
     "message": "OSD"
   },
   "tabPower": {
-    "message": "Power & Battery"
+    "message": "Power & Batarya"
   },
   "tabGPS": {
     "message": "GPS"
   },
   "tabMotorTesting": {
-    "message": "Motors"
+    "message": "Motorlar"
   },
   "tabLedStrip": {
     "message": "LED Strip"
   },
   "tabRawSensorData": {
-    "message": "Sensors"
+    "message": "Sensörler"
   },
   "tabCLI": {
     "message": "CLI"
@@ -128,14 +128,14 @@
     "message": "Blackbox"
   },
   "tabAdjustments": {
-    "message": "Adjustments"
+    "message": "Ayarlamalar"
   },
   "tabAuxiliary": {
-    "message": "Modes"
+    "message": "Modlar"
   },
 
   "serialPortOpened": {
-    "message": "Serial port <span style=\"color: #ffbb00\">successfully</span> opened with ID: $1"
+    "message": "Serial port <span style=\"color: #ffbb00\">successfully</span> ID: $1 ile açıldı"
   },
   "serialPortOpenFail": {
     "message": "<span style=\"color: red\">Failed</span> to open serial port"
@@ -167,7 +167,7 @@
     "message": "No configuration received within <span style=\"color: red\">10 seconds</span>, communication <span style=\"color: red\">failed</span>"
   },
   "firmwareVersionNotSupported": {
-    "message": "This firmware version is <span style=\"color: red\">not supported</span>. Please upgrade to firmware that supports api version <strong>$1</strong> or higher. Use CLI for backup before flashing. CLI backup/restore procedure is in the documention.<br />Alternatively download and use an old version of the configurator if you are not ready to upgrade."
+    "message": "Firmware versiyonunuz <span style=\"color: red\">desteklenmiyor.</span>. Lütfen desteklenen api versiyonu ile firmware güncellemesi yapınız,  <strong>$1</strong> yada üzeri. Use CLI for backup before flashing. CLI backup/restore procedure is in the documention.<br />Alternatively download and use an old version of the configurator if you are not ready to upgrade."
   },
   "firmwareTypeNotSupported": {
     "message": "Non - Cleanflight/Betaflight firmware is <span style=\"color: red\">not supported</span>, except for CLI mode."
@@ -180,29 +180,29 @@
     "message": "You need to <strong>connect</strong> before you can view any of the tabs."
   },
   "tabSwitchWaitForOperation": {
-    "message": "You <span style=\"color: red\">can't</span> do this right now, please wait for current operation to finish ..."
+    "message": "You <span style=\"color: red\">can't</span> do this right now, işlem bitene kadar lütfen bekleyiniz ..."
   },
 
   "tabSwitchUpgradeRequired": {
     "message": "You need to <strong>upgrade</strong> your firmware to the latest version of Betaflight before you can use the $1 tab."
   },
   "firmwareVersion": {
-    "message": "Firmware Version: <strong>$1</strong>"
+    "message": "Firmware Versiyonu: <strong>$1</strong>"
   },
   "apiVersionReceived": {
-    "message": "MultiWii API version: <strong>$1</strong>"
+    "message": "MultiWii API versiyonu: <strong>$1</strong>"
   },
   "uniqueDeviceIdReceived": {
     "message": "Unique device ID: <strong>0x$1</strong>"
   },
   "craftNameReceived": {
-    "message": "Craft name: <strong>$1</strong>"
+    "message": "Cihaz Adı: <strong>$1</strong>"
   },
   "boardInfoReceived": {
-    "message": "Board: <strong>$1</strong>, version: <strong>$2</strong>"
+    "message": "FC: <strong>$1</strong>, versiyon: <strong>$2</strong>"
   },
   "buildInfoReceived": {
-    "message": "Running firmware released on: <strong>$1</strong>"
+    "message": "Çalışan firmware versiyonu: <strong>$1</strong>"
   },
   "fcInfoReceived": {
     "message": "Flight controller info, identifier: <strong>$1</strong>, version: <strong>$2</strong>"
@@ -212,7 +212,7 @@
     "message": "Application just updated to version: $1"
   },
   "notifications_click_here_to_start_app": {
-    "message": "Click here to start the application"
+    "message": "Uygulamayı başlatmak için buraya tıklayınız"
   },
 
   "statusbar_port_utilization": {
@@ -283,10 +283,10 @@
     "message": "Sponsors"
   },
   "defaultDocumentationHead": {
-    "message": "Documentation / Manual"
+    "message": "Dökümantasyon / Manual"
   },
   "defaultDocumentation": {
-    "message": "Betaflight documentation is available in release notes and wiki.<br /><br />"
+    "message": "Betaflight dökümanlarına, sürüm notlarından ve wiki den erişebilirsiniz.<br /><br />"
   },
   "defaultDocumentation1": {
     "message": "The Betaflight wiki is a great resource for information, it can be found <a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\">here</a>."
@@ -344,10 +344,10 @@
     "message": "Restore settings to <strong>default</strong>"
   },
   "initialSetupButtonBackup": {
-    "message": "Backup"
+    "message": "Yedekle"
   },
   "initialSetupButtonRestore": {
-    "message": "Restore"
+    "message": "Kurtar"
   },
   "initialSetupBackupRestoreText": {
     "message": "<strong>Backup</strong> your configuration in case of an accident, <strong>CLI</strong> settings are <span style=\"color: red\">not</span> included - See 'dump' cli command"
@@ -368,7 +368,7 @@
     "message": "Mixer Type"
   },
   "initialSetupThrottleHead": {
-    "message": "Throttle Settings"
+    "message": "Throttle Ayarları"
   },
   "initialSetupMinimum": {
     "message": "Minimum:"
@@ -383,16 +383,16 @@
     "message": "MinCommand:"
   },
   "initialSetupBatteryHead": {
-    "message": "Battery"
+    "message": "Batarya"
   },
   "initialSetupMinCellV": {
-    "message": "Min Cell Voltage:"
+    "message": "Min Hücre Voltajı:"
   },
   "initialSetupMaxCellV": {
-    "message": "Max Cell Voltage:"
+    "message": "Max Hücre Voltajı:"
   },
   "initialSetupVoltageScale": {
-    "message": "Voltage Scale:"
+    "message": "Voltage Aralığı:"
   },
   "initialSetupAccelTrimsHead": {
     "message": "Accelerometer trims"
@@ -410,10 +410,10 @@
     "message": "Declination:"
   },
   "initialSetupInfoHead": {
-    "message": "Info"
+    "message": "Bilgi"
   },
   "initialSetupBattery": {
-    "message": "Battery voltage:"
+    "message": "Batarya voltajı:"
   },
   "initialSetupBatteryValue": {
     "message": "$1 V"
@@ -443,7 +443,7 @@
     "message": "Instruments"
   },
   "initialSetupButtonSave": {
-    "message": "Save"
+    "message": "Kaydet"
   },
   "initialSetupModel": {
     "message": "Model: $1"
@@ -452,40 +452,40 @@
     "message": "$1 deg"
   },
   "initialSetupAccelCalibStarted": {
-    "message": "Accelerometer calibration started"
+    "message": "Accelerometer kalibraysonu başladı"
   },
   "initialSetupAccelCalibEnded": {
-    "message": "Accelerometer calibration <span style=\"color: #ffbb00\">finished</span>"
+    "message": "Accelerometer kalibraysonu <span style=\"color: #ffbb00\">bitti</span>"
   },
   "initialSetupMagCalibStarted": {
-    "message": "Magnetometer calibration started"
+    "message": "Magnetometer kalibraysonu başladı"
   },
   "initialSetupMagCalibEnded": {
-    "message": "Magnetometer calibration <span style=\"color: #ffbb00\">finished</span>"
+    "message": "Magnetometer kalibraysonu <span style=\"color: #ffbb00\">bitti</span>"
   },
   "initialSetupSettingsRestored": {
-    "message": "Settings restored to <strong>default</strong>"
+    "message": "Ayarlar <strong>default</strong> durumuna döndürüldü."
   },
   "initialSetupEepromSaved": {
-    "message": "EEPROM <span style=\"color: #ffbb00\">saved</span>"
+    "message": "EEPROM <span style=\"color: #ffbb00\">kaydedildi</span>"
   },
   "featureNone": {
-    "message": "&lt;Select One&gt;"
+    "message": "&lt;Seçiniz&gt;"
   },
   "featureRX_PPM": {
     "message": "PPM RX input"
   },
   "featureVBAT": {
-    "message": "Battery voltage monitoring"
+    "message": "Batarya voltajı izleme"
   },
   "featureINFLIGHT_ACC_CAL": {
-    "message": "In-flight level calibration"
+    "message": "In-flight level kalibrasyonu"
   },
   "featureRX_SERIAL": {
     "message": "Serial-based receiver (SPEKSAT, SBUS, SUMD)"
   },
   "featureMOTOR_STOP": {
-    "message": "Don't spin the motors when armed"
+    "message": "Arm edildiğinde motorlar dönmez"
   },
   "featureSERVO_TILT": {
     "message": "Servo gimbal"
@@ -509,22 +509,22 @@
     "message": "Telemetry output"
   },
   "featureCURRENT_METER": {
-    "message": "Battery current monitoring"
+    "message": "Batarya akım izleme"
   },
   "feature3D": {
-    "message": "3D mode (for use with reversible ESCs)"
+    "message": "3D mode (reversible ESCs ler ile desteklenir)"
   },
   "featureRX_PARALLEL_PWM": {
-    "message": "PWM RX input (one wire per channel)"
+    "message": "PWM RX input (her kanal için bir kablo)"
   },
   "featureRX_MSP": {
-    "message": "MSP RX input (control via MSP port)"
+    "message": "MSP RX input (MSP port aracılığıyla kontrol)"
   },
   "featureRSSI_ADC": {
     "message": "Analog RSSI input"
   },
   "featureLED_STRIP": {
-    "message": "Multi-color RGB LED strip support"
+    "message": "Multi-color RGB LED strip desteği"
   },
   "featureDISPLAY": {
     "message": "OLED Screen Display"
@@ -533,13 +533,13 @@
     "message": "If this feature is enabled, and no display device is connected (or the display device is not powered up), there will be a delay of approx. 10 seconds on every reboot of the flight controller."
   },
   "featureONESHOT125": {
-    "message": "ONESHOT ESC support"
+    "message": "ONESHOT ESC desteği"
   },
   "featureONESHOT125Tip": {
-    "message": "Disconnect flight battery and remove props before enabling."
+    "message": "Aktifleştirmeden önce batarya ve pervanelerinizi çıkartınız."
   },
   "featureBLACKBOX": {
-    "message": "Blackbox flight data recorder"
+    "message": "Blackbox flight data recorder (karakutu)"
   },
   "featureBLACKBOXTip": {
     "message": "Configure via the BlackBox tab after enabling."
@@ -563,7 +563,7 @@
     "message": "Super Expo Rates"
   },
   "featureSDCARD": {
-    "message": "SDCard support (for logging)"
+    "message": "SDCard desteği (for logging)"
   },
   "featureOSD": {
     "message": "On Screen Display"
@@ -626,13 +626,13 @@
     "message": "Board and Sensor Alignment"
   },
   "configurationBoardAlignmentRoll": {
-    "message": "Roll Degrees"
+    "message": "Roll Açısı"
   },
   "configurationBoardAlignmentPitch": {
-    "message": "Pitch Degrees"
+    "message": "Pitch Açısı"
   },
   "configurationBoardAlignmentYaw": {
-    "message": "Yaw Degrees"
+    "message": "Yaw Açısı"
   },
   "configurationSensorAlignmentGyro": {
     "message": "GYRO Alignment"
@@ -737,7 +737,7 @@
     "message": "EEPROM <span style=\"color: #ffbb00\">saved</span>"
   },
   "configurationButtonSave": {
-    "message": "Save and Reboot"
+    "message": "Kaydet ve Yeniden Başlat"
   },
 
   "portsIdentifier": {
@@ -768,10 +768,10 @@
     "message": "Firmware upgrade <span style=\"color: red\">required</span>.  Serial port configurations of firmware &lt; 1.8.0 is not supported."
   },
   "portsButtonSave": {
-    "message": "Save and Reboot"
+    "message": "kaydet ve Yeniden Başlat"
   },
   "portsTelemetryDisabled": {
-    "message": "Disabled"
+    "message": "Pasif"
   },
   "portsFunction_MSP": {
     "message": "MSP"
@@ -837,16 +837,16 @@
     "message": "Filter Settings"
   },
   "pidTuningShowAllPids": {
-    "message": "Show all PIDs"
+    "message": "Tüm PID leri göster"
   },
   "pidTuningHideUnusedPids": {
-    "message": "Hide unused PIDs"
+    "message": "Kullanılmayan PIDleri gizle"
   },
   "pidTuningNonProfilePidSettings": {
     "message": "Profile independent PID Controller Settings"
   },
   "pidTuningPidSettings": {
-    "message": "PID Controller Settings"
+    "message": "PID Ayarları"
   },
   "receiverRcInterpolation": {
     "message": "RC Interpolation"
@@ -858,13 +858,13 @@
     "message": "Interpolation interval for manual RC interpolation mode in milliseconds"
   },
   "receiverRcInterpolationOff": {
-    "message": "Off"
+    "message": "Kapalı"
   },
   "receiverRcInterpolationDefault": {
-    "message": "Preset"
+    "message": "Öntanımlı"
   },
   "receiverRcInterpolationAuto": {
-    "message": "Auto"
+    "message": "Oto"
   },
   "receiverRcInterpolationManual": {
     "message": "Manual"
@@ -918,7 +918,7 @@
     "message": "TPA Breakpoint"
   },
   "pidTuningFilter": {
-    "message": "Filter"
+    "message": "Filtre"
   },
   "pidTuningFilterFrequency": {
     "message": "Frequency"
@@ -930,22 +930,22 @@
     "message": "Throttle"
   },
   "pidTuningButtonSave": {
-    "message": "Save"
+    "message": "Kaydet"
   },
   "pidTuningButtonRefresh": {
-    "message": "Refresh"
+    "message": "Yenile"
   },
   "pidTuningProfileHead": {
-    "message": "Profile"
+    "message": "Profil"
   },
   "pidTuningControllerHead": {
-    "message": "PID Controller"
+    "message": "PID Kontrolcü"
   },
   "pidTuningResetProfile": {
-    "message": "Reset all profile values"
+    "message": "Tüm profilleri resetle"
   },
   "pidTuningProfileReset": {
-    "message": "Loaded default profile values."
+    "message": "Default profil değerleri yüklendi."
   },
   "pidTuningReceivedProfile": {
     "message": "Flight controller set Profile: <strong style=\"color: #ffbb00\">$1</strong>"
@@ -960,10 +960,10 @@
     "message": "Loaded Rateprofile: <strong style=\"color: #ffbb00\">$1</strong>"
   },
   "pidTuningDataRefreshed": {
-    "message": "PID data <strong>refreshed</strong>"
+    "message": "PID verisi <strong>yenilendi</strong>"
   },
   "pidTuningEepromSaved": {
-    "message": "EEPROM <span style=\"color: #ffbb00\">saved</span>"
+    "message": "EEPROM <span style=\"color: #ffbb00\">kaydedildi</span>"
   },
 
   "receiverHelp": {
@@ -1191,14 +1191,14 @@
     "message": "Save"
   },
   "adjustmentsEepromSaved": {
-    "message": "EEPROM <span style=\"color: #ffbb00\">saved</span>"
+    "message": "EEPROM <span style=\"color: #ffbb00\">kaydedildi</span>"
   },
 
   "transponderNotSupported": {
-    "message": "Your flight controller's firmware does not support transponder functionality."
+    "message": "FC niz transponder özelliğini desteklemiyor."
   },
   "transponderInformation": {
-    "message": "Transponders systems allow race organizers to time your laps.  The transponder is fitted to your aircraft and when your aircraft passes the timing gate the track-side receiver registers your code and records your laptime.  When fitting an IR based transponder your should ensure that it points outward from your aircraft towards the track-side receivers and that the light beam is not obstructed by your airframe, battery-straps, cables, propellers, etc."
+    "message": "Transponders sistemleri yarışlarda tur sürenizi konfigüre eder.  The transponder is fitted to your aircraft and when your aircraft passes the timing gate the track-side receiver registers your code and records your laptime.  When fitting an IR based transponder your should ensure that it points outward from your aircraft towards the track-side receivers and that the light beam is not obstructed by your airframe, battery-straps, cables, propellers, etc."
   },
   "transponderConfigurationType": {
     "message": "Transponder type"
@@ -1538,28 +1538,28 @@
   },
 
   "firmwareFlasherPath": {
-    "message": "Path:"
+    "message": "Yol:"
   },
   "firmwareFlasherSize": {
-    "message": "Size:"
+    "message": "Boyut:"
   },
   "firmwareFlasherStatus": {
-    "message": "Status:"
+    "message": "Durum:"
   },
   "firmwareFlasherProgress": {
-    "message": "Progress:"
+    "message": "İşlemler:"
   },
   "firmwareFlasherLoadFirmwareFile": {
-    "message": "Please load firmware file"
+    "message": "Lütfen firmware dosyasını yükleyiniz"
   },
   "firmwareFlasherNoReboot": {
     "message": "No reboot sequence"
   },
   "firmwareFlasherOnlineSelectBoardDescription": {
-    "message": "Select your board to see available online firmware releases - Select the correct firmware appropriate for your board."
+    "message": "Select your board to see available online firmware releases - FC niz için uygun olan firmware seçiniz."
   },
   "firmwareFlasherOnlineSelectFirmwareVersionDescription": {
-    "message": "Select firmware version for your board."
+    "message": "FC niz için uygun olan firmware seçiniz."
   },
   "firmwareFlasherNoRebootDescription": {
     "message": "Enable if your FC is in boot mode. i.e. if you powered on your FC with the bootloader pins jumped or whilst holding your FC's BOOT button."
@@ -1607,13 +1607,13 @@
     "message": "Choose a Firmware version for"
   },
   "firmwareFlasherButtonLoadLocal": {
-    "message": "Load Firmware [Local]"
+    "message": "Firmware yükle [Local]"
   },
   "firmwareFlasherButtonLoadOnline": {
-    "message": "Load Firmware [Online]"
+    "message": "Firmware yükle [Online]"
   },
   "firmwareFlasherButtonDownloading": {
-    "message": "Downloading..."
+    "message": "İndiriliyor..."
   },
   "firmwareFlasherFlashFirmware": {
     "message": "Flash Firmware"
@@ -1622,7 +1622,7 @@
     "message": "GitHub Firmware Info"
   },
   "firmwareFlasherCommiter": {
-    "message": "Committer:"
+    "message": "Yükleyici:"
   },
   "firmwareFlasherDate": {
     "message": "Date:"
@@ -1995,22 +1995,22 @@
     "message": "Firmware upgrade <span style=\"color: red\">required</span>. Battery/Amperage/Voltage configurations using API &lt; 1.33.0 (Betaflight release &lt;= 3.17) is not supported."
   },
   "powerBatteryVoltageMeterSource": {
-    "message": "Voltage Meter Source"
+    "message": "Voltage Ölçüm Kaynağı"
   },
   "powerBatteryCurrentMeterSource": {
-    "message": "Current Meter Source"
+    "message": "Amper Ölçüm Kaynağı"
   },
   "powerBatteryMinimum": {
-    "message": "Minimum Cell Voltage"
+    "message": "Minimum Hücre Voltajı"
   },
   "powerBatteryMaximum": {
-    "message": "Maximum Cell Voltage"
+    "message": "Maximum Hücre Voltajı"
   },
   "powerBatteryWarning": {
-    "message": "Warning Cell Voltage"
+    "message": "Uyarı Hücre Voltajı"
   },
   "powerVoltageHead": {
-    "message": "Voltage Meter"
+    "message": "Voltage Ölçümü"
   },
   "powerVoltageValue": {
     "message": "$1 V"
@@ -2471,13 +2471,13 @@
     "message": "Camera"
   },
   "configurationPersonalization": {
-    "message": "Personalization"
+    "message": "Kişiselleştirme"
   },
   "craftName": {
-    "message": "Craft name"
+    "message": "Cihaz adı"
   },
   "configurationFpvCamAngleDegrees": {
-    "message": "FPV Camera Angle [degrees]"
+    "message": "FPV Camera Angle [derece]"
   },
   "onboardLoggingBlackbox": {
     "message": "Blackbox logging device"
@@ -2492,7 +2492,7 @@
     "message": "Onboard dataflash chip"
   },
   "onboardLoggingEraseInProgress": {
-    "message": "Erase in progress, please wait..."
+    "message": "Erase in progress, lütfen bekleyiniz..."
   },
   "onboardLoggingOnboardSDCard": {
     "message": "Onboard SD card"
