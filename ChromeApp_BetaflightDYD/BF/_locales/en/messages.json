@@ -1598,13 +1598,13 @@
     "message": "Choose a Firmware / Board"
   },
   "firmwareFlasherOptionLabelSelectBoard": {
-    "message": "Choose a Board"
+    "message": "FC Modeliniz"
   },
   "firmwareFlasherOptionLabelSelectFirmwareVersion": {
-    "message": "Choose a Firmware version"
+    "message": "Firmware sürümünüz"
   },
   "firmwareFlasherOptionLabelSelectFirmwareVersionFor": {
-    "message": "Choose a Firmware version for"
+    "message": "Firmware sürümünüz"
   },
   "firmwareFlasherButtonLoadLocal": {
     "message": "Firmware yükle [Local]"
